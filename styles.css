@@ -11,11 +11,20 @@ nav {
 }
 
 .name {
-    padding-left: 10px;
     flex-shrink: 0;
     text-align: center;
 }
 
 .name span {
     color: teal;
+}
+
+header img {
+    max-width: 100%;
+}
+
+.works-button {
+    width: 200px;
+    height: 8px;
+    margin-inline: auto;
 }
