@@ -74,8 +74,16 @@ header img {
 
 .works-button {
     width: 200px;
-    height: 6px;
+    height: 50px;
     margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works-button:hover {
+    transition:all 0.2s ease-in;
+    transform: scale(1.1);
 }
 
 .socials{
@@ -135,6 +143,11 @@ header img {
     position: absolute;
     top: 85%;
     left: 43%;
+}
+
+.project-button:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
 }
 
 .mobile {
