@@ -4,27 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg" href="./assets/svg/arch.svg"/>
     <link rel="stylesheet" href="node_modules/@picocss/pico/css/pico.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
     <title>Ethan Palas | Portfolio</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav-fixed">
         <ul>
-            <li><a href="/#">Home</a></li>
-            <li><a href="/#">About</a></li>
-            <li><a href="/#">Projects</a></li>
-            <li><a href="/#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header class="name">
+    <header class="name" id="home">
         <h1>Hello! I'm <span>Ethan Palas</span>.</h1>
-        <h2>A freelance web developer in St.Louis.</h2>
+        <h2>Freelance web developer in St. Louis.</h2>
         <img src="./assets/svg/arch.svg" alt="arch" height="350" width="350">
     </header>
     <div class="works-button">
-        <button class="outline">View work</button>
+        <button class="outline"><a href="#projects">View my work</a></button>
     </div>
-    
+    <div class="socials">
+        <a href="https://bitbucket.org/ethan-palas/"><img src="./assets/svg/bitbucket.svg" alt="bitbucket" height="50" width="50"></a>
+        <a href="https://www.linkedin.com/in/ethan-palas-b9b3a417a/"><img src="./assets/svg/linkedin.svg" alt="linkedin" height="50" width="50"></a>
+    </div>
+    <article class="about" id="about">
+        <h2 >About Me</h2>
+        <h5 class="grid about-describe" >
+            <div class="about-img">
+                <img src="./assets/svg/computer.svg" alt="computer">
+            </div>
+            <div class="about-desc">
+                I'm a self taught freelance developer currently working with several DAOs. I pride myself in 
+                continually learning new technologies in order to create the most unique and intuitive user experience possible.
+                I'm proficient in Next/React.JS, Redux, Express, Node, SQL, and Python. 
+                <br>
+                <br>
+                My goals for 2023 are to contribute to open source projects and to work with more 3D technologies like Three.JS and Babylon.JS.
+            </div>
+            
+        </h5>
+    </article>
+    <section></section>
+    <article id="projects">
+        <h2>Projects</h2>
+        <div class="container">
+            <h4 class="project-title">Pokemart E-Commerce Site</h4>
+            <div class="project">
+                <img src="./assets/img/pokemart-screen.png" alt="pokemart project thumbnail" height="300" width="fill" class="test">
+                <div class="overlay">
+                    <p class="project-desc">
+                        Uses Redux for state management of cart. Calls PokeAPI with Axios for item modal info. Sends mock receipt with Nodemailer and Next API routes. Creates and manages user accounts with Supabase.
+                        <br>
+                        <br>
+                        Technologies used:
+                        <br>
+                        Next.JS
+                        <br>
+                        Redux
+                        <br>
+                        Tailwind
+                        <br>
+                        Axios
+                        <br>
+                        Supabase
+                        <br>
+                        Nodemailer
+                    </p>
+                    <a href="https://pokemart-two.vercel.app/" role="button" class="project-button">Go to demo</a>
+                </div>
+                <div class="mobile">
+                    <p class="mobile-desc">
+                        Uses Redux for state management of cart. Calls PokeAPI with Axios for item modal info. Sends mock receipt with Nodemailer and Next API routes. Creates and manages user accounts with Supabase.
+                        <br>
+                        <br>
+                        Technologies used:
+                        <br>
+                        <br>
+                        Next.JS
+                        <br>
+                        Redux
+                        <br>
+                        Tailwind
+                        <br>
+                        Axios
+                        <br>
+                        Supabase
+                        <br>
+                        Nodemailer
+                    </p>
+                    <a href="https://pokemart-two.vercel.app/" role="button" class="mobile-button">Go to demo</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section></section>
+    <article id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <h3>Wanting to chat? Send me a message below.</h3>
+            <form target="_blank" action="https://formsubmit.co/337c046bebe944fd712fa6eb9cf85f04" method="POST">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                            </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </form>
+        </div>
+    </article>
 </body>
 </html>
