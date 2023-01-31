@@ -1,4 +1,3 @@
-import '../pico-master/css/pico.css';
 
 const navbar = document.getElementsByClassName('nav-fixed');
 window.onscroll = () => {
