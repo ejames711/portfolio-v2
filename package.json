@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@picocss/pico": "^1.5.7"
+    "@picocss/pico": "^1.5.7",
+    "animate.css": "^4.1.1"
   }
 }
