@@ -17,9 +17,6 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-    .about-img{
-        margin-bottom: 20px;
-    }
     .nav-fixed{
         justify-content: center;
         padding: 0;
@@ -31,22 +28,27 @@ html {
 }
 
 @media screen and (max-width: 960px){
-    .about-img{
-        display: flex;
-        justify-content: center;
-    }
     .project-desc, .project-button, .overlay{
         display: none;
     }
-    .project {
+    .mobile {
         border: 2px solid gray;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .mobile-button{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media screen and (min-width: 960px){
     .about-img{
-        display: flex;
-        justify-content: center;
+        margin-left: 150px;
     }
     .about-desc {
         display: flex;
@@ -78,16 +80,25 @@ header img {
     margin-inline: auto;
 }
 
+.works-button:hover {
+    transition:all 0.2s ease-in;
+    transform: scale(1.1);
+}
+
 .socials{
     margin-top: 100px;
     justify-content: center;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
 }
 
-.self-image {
-    width: fit-content;
+.icon {
+    width: 100px;  
+}
+
+.skills-row-1 {
+    margin-bottom: 30px;
 }
 
 .project {
@@ -97,8 +108,16 @@ header img {
     text-align: center;
 }
 
+.project-2 {
+    position: relative;
+    border-radius: 10px;
+    padding-inline: 0;
+    text-align: center;
+}
+
 .project-title {
     text-align: center;
+    margin-top: 20px;
 }
 
 .overlay {
@@ -112,12 +131,28 @@ header img {
     opacity: 0;
     transition: .5s ease;
     background-color: black;
-  }
+}
+
+.overlay-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
 
 .project:hover .overlay {
     opacity: 0.8;
-  }
+}
 
+.project-2:hover .overlay-2 {
+    opacity: 0.8;
+}
 
 .project-desc {
     color: white;
@@ -131,12 +166,36 @@ header img {
     text-align: center;
 }
 
-.project-button {
+.project-desc-2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.demo-button {
     position: absolute;
     top: 85%;
-    left: 43%;
+    left: 34%;
+    width: 150px;
+}
+
+.code-button {
+    position: absolute;
+    top: 85%;
+    left: 52%;
+    width: 150px;
 }
 
 .mobile {
     padding: 20px;
+}
+
+.mobile-desc {
+    text-align: center;
 }

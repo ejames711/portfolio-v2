@@ -51,14 +51,23 @@
     </div>
     <article class="about" id="about">
         <h2 >About Me</h2>
-        <h5 class="grid about-describe" >
+        <h5 class="grid" >
             <div class="about-img">
-                <img src="./assets/svg/computer.svg" alt="computer">
+                <div class="skills-row-1">
+                    <img src="./assets/svg/ts.svg" alt="typescript" class="icon" title="Typescript">
+                    <img src="./assets/svg/next.svg" alt="next/react.js" class="icon" title="Next & React JS">
+                    <img src="./assets/svg/tailwind.svg" alt="tailwind" class="icon" title="TailwindCSS">
+                </div>
+                <div class="skills-row-2">
+                    <img src="./assets/svg/redux.svg" alt="redux" class="icon" title="Redux">
+                    <img src="./assets/svg/python.svg" alt="python" class="icon" title="Python">
+                    <img src="./assets/svg/postgres.svg" alt="postgres" class="icon" title="PostgreSQL">
+                </div>
             </div>
             <div class="about-desc">
                 I'm a self taught freelance developer currently working with several DAOs. I pride myself in 
                 continually learning new technologies in order to create the most unique and intuitive user experience possible.
-                I'm proficient in Next/React.JS, Redux, Express, Node, SQL, and Python. 
+                I'm proficient in Typescript, Next/React.JS, Tailwind, Redux, Python, and SQL. 
                 <br>
                 <br>
                 My goals for 2023 are to contribute to open source projects and to work with more 3D technologies like Three.JS and Babylon.JS.
@@ -71,52 +80,77 @@
         <h2>Projects</h2>
         <div class="container">
             <h4 class="project-title">Pokemart E-Commerce Site</h4>
-            <div class="project">
-                <img src="./assets/img/pokemart-screen.png" alt="pokemart project thumbnail" height="300" width="fill" class="test">
-                <div class="overlay">
-                    <p class="project-desc">
-                        Uses Redux for state management of cart. Calls PokeAPI with Axios for item modal info. Sends mock receipt with Nodemailer and Next API routes. Creates and manages user accounts with Supabase.
-                        <br>
-                        <br>
-                        Technologies used:
-                        <br>
-                        Next.JS
-                        <br>
-                        Redux
-                        <br>
-                        Tailwind
-                        <br>
-                        Axios
-                        <br>
-                        Supabase
-                        <br>
-                        Nodemailer
-                    </p>
-                    <a href="https://pokemart-two.vercel.app/" role="button" class="project-button">Go to demo</a>
+            <div>
+                <div class="project">
+                    <img src="./assets/img/pokemart-screen.png" alt="pokemart project thumbnail" height="300" width="fill" class="test">
+                    <div class="overlay">
+                        <p class="project-desc">
+                            Uses Redux for state management of cart. Calls PokeAPI with Axios for item modal info. Sends mock receipt with Nodemailer and Next API routes. Creates and manages user accounts with Supabase.
+                            <br>
+                            <br>
+                            Technologies used:
+                            <br>
+                            Next.JS
+                            <br>
+                            Redux
+                            <br>
+                            Tailwind
+                            <br>
+                            Axios
+                            <br>
+                            Supabase
+                            <br>
+                            Nodemailer
+                        </p>
+                        <a href="https://pokemart-two.vercel.app/" role="button" class="demo-button">Go to demo</a>
+                        <a href="https://bitbucket.org/ethan-palas/pokemart/src/main/" role="button" class="code-button">View Code</a>
+                    </div>
+                </div>
+            <div class="mobile">
+                <p class="mobile-desc">
+                    Uses Redux for state management of cart. Calls PokeAPI with Axios for item modal info. Sends mock receipt with Nodemailer and Next API routes. Creates and manages user accounts with Supabase.
+                    <br>
+                    <br>
+                    Technologies used:
+                    <br>
+                    <br>
+                    Next.JS
+                    <br>
+                    Redux
+                    <br>
+                    Tailwind
+                    <br>
+                    Axios
+                    <br>
+                    Supabase
+                    <br>
+                    Nodemailer
+                </p>
+                <a href="https://pokemart-two.vercel.app/" role="button" class="mobile-button">Go to demo</a>
+                <a href="https://bitbucket.org/ethan-palas/pokemart/src/main/" role="button" class="mobile-button">View Code</a>
+            </div>
+                <h4 class="project-title">The Hangout</h4>
+                <div class="project-2">
+                    <img src="./assets/img/hangout-screen.png" alt="the hangout project thumbnail" height="300" width="fill" class="test">
+                    <div class="overlay-2 ">
+                        <p class="project-desc-2">
+                            <h1>Work In Progress</h1>
+                            <br>
+                            <h3>Current Code and Landing Page Viewable</h3>
+                        </p>
+                        <a href="https://the-hangout.vercel.app/" role="button" class="demo-button">Go to demo</a>
+                        <a href="https://bitbucket.org/ethan-palas/the-hangout/src/main/" role="button" class="code-button">View Code</a>
+                    </div>
                 </div>
                 <div class="mobile">
                     <p class="mobile-desc">
-                        Uses Redux for state management of cart. Calls PokeAPI with Axios for item modal info. Sends mock receipt with Nodemailer and Next API routes. Creates and manages user accounts with Supabase.
+                        Work In Progress
                         <br>
-                        <br>
-                        Technologies used:
-                        <br>
-                        <br>
-                        Next.JS
-                        <br>
-                        Redux
-                        <br>
-                        Tailwind
-                        <br>
-                        Axios
-                        <br>
-                        Supabase
-                        <br>
-                        Nodemailer
+                        Current Code and Landing Page Viewable
                     </p>
-                    <a href="https://pokemart-two.vercel.app/" role="button" class="mobile-button">Go to demo</a>
+                    <a href="https://the-hangout.vercel.app/" role="button" class="mobile-button">Go to demo</a>
+                    <a href="https://bitbucket.org/ethan-palas/the-hangout/src/main/" role="button" class="mobile-button">View Code</a>
                 </div>
-            </div>
         </div>
     </article>
     <section></section>
