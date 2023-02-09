@@ -28,7 +28,7 @@ html {
 }
 
 @media screen and (max-width: 960px){
-    .project-desc, .project-button, .overlay{
+    .project-desc, .project-desc-2, .overlay-2, .project-button, .overlay{
         display: none;
     }
     .mobile {
@@ -141,24 +141,12 @@ header img {
     background-color: black;
 }
 
-.overlay-2 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
-}
 
 .project:hover .overlay {
     opacity: 0.8;
 }
 
-.project-2:hover .overlay-2 {
+.project-2:hover .overlay {
     opacity: 0.8;
 }
 
